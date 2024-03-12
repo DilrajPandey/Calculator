@@ -1,0 +1,74 @@
+
+body{
+    width: 220vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, rgb(27, 7, 27), rgb(13, 2, 41));
+}
+#calcu{
+    border:2px solid rgb(99, 96, 96);
+    border-radius: 10px;
+    width: 300px;
+    height: 400px;
+    background: transparent;
+    box-shadow: 0px 3px 20px rgb(79, 75, 75, 1); 
+}
+#display{
+    margin: 13px;
+    border: none;
+    width: 85%;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgb(84, 84, 84, 0);
+    color: white;
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+}
+display::placeholder{
+    color: white;
+}
+.buttons{
+    border: none;
+    display: flex;
+    margin: 10px;
+    justify-content: center; /* used for allingment  */
+    flex-wrap: wrap; /* wraps all content in the container*/
+}
+.but{
+    border: none;
+    width: 53px;
+    height: 53px;
+    margin: 4px;
+    border-radius: 50%;
+    background: transparent;
+    color: white;
+    font-size: 20px;
+    box-shadow: -8px -8px 15px rgb(255, 255, 255, 0.06);
+    cursor: pointer;
+}
+.operator{
+    border: none;
+    width: 53px;
+    height: 53px;
+    margin: 4px;
+    border-radius: 50%;
+    background: transparent;
+    color: rgb(16, 189, 223);
+    font-size: 18px;
+    box-shadow: -8px -8px 15px rgb(255, 255, 255, 0.06);
+    cursor: pointer;
+}
+.equals{
+    border: none;
+    width: 53px;
+    height: 53px;
+    margin: 4px;
+    border-radius: 50%;
+    background: rgb(230, 134, 8);
+    color: white;
+    font-size: 20px;
+    box-shadow: -8px -8px 15px rgb(255, 255, 255, 0.06);
+    cursor: pointer;
+}

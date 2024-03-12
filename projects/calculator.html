@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="calculator.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="calcu">
+        <input type="text" id="display" placeholder="0" readonly> <!-- readonly is only for reading purpose in the textfield-->
+        <div class="buttons">
+            <button class="operator" onclick="press=''; 
+            document.querySelector('#display').value = press;" >C</button>
+            <button class="operator" onclick="press = press.substring(0, press.length-1); document.querySelector('#display').value = press;" >DEL</button>
+            <button class="operator" onclick="press = String(-eval(press)); document.querySelector('#display').value = press;" >+/-</button>
+            <button class="operator" onclick="press = press + '/'; 
+            document.querySelector('#display').value = press;" >/</button>
+            <button class="but" onclick="press = press + '1'; 
+            document.querySelector('#display').value = press;" >1</button>
+            <button class="but" onclick="press = press + '2'; 
+            document.querySelector('#display').value = press;" >2</button>
+            <button class="but" onclick="press = press + '3'; 
+            document.querySelector('#display').value = press;" >3</button>
+            <button class="operator" onclick="press = press + '*'; 
+            document.querySelector('#display').value = press;" >*</button>
+            <button class="but" onclick="press = press + '4'; 
+            document.querySelector('#display').value = press;" >4</button>
+            <button class="but" onclick="press = press + '5'; 
+            document.querySelector('#display').value = press;" >5</button>
+            <button class="but" onclick="press = press + '6'; 
+            document.querySelector('#display').value = press;" >6</button>
+            <button class="operator" onclick="press = press + '+'; 
+            document.querySelector('#display').value = press;" >+</button>
+            <button class="but" onclick="press = press + '7'; 
+            document.querySelector('#display').value = press;" >7</button>
+            <button class="but" onclick="press = press + '8'; 
+            document.querySelector('#display').value = press;" >8</button>
+            <button class="but" onclick="press = press + '9'; 
+            document.querySelector('#display').value = press;" >9</button>
+            <button class="operator" onclick="press = press + '-'; 
+            document.querySelector('#display').value = press;" >-</button>
+            <button class="but" onclick="press = press + '00'; 
+            document.querySelector('#display').value = press;" >00</button>
+            <button class="but" onclick="press = press + '0'; 
+            document.querySelector('#display').value = press;" >0</button>
+            <button class="but" onclick="press = press + '.'; 
+            document.querySelector('#display').value = press;" >.</button>
+            <button class="equals" onclick=" 
+            let result= eval(press) 
+            press = result; document.querySelector('#display').value = press;" >=</button>
+        </div>
+    </div>
+
+<script>
+    let press= '';
+    document.querySelector('#display').value = press; //.value instead of innerText bcz the value is going to be inserted and can be changed but innerText in not meant to be changed
+</script>
+</body>
+</html>
