@@ -1,5 +1,5 @@
 # Calculator
-A fully functional calculator.
+A fully functional calculator in use.
 <br>
 HTML, Css and JavaSccript is used.
 <br>
