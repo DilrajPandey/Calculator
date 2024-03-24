@@ -1,7 +1,7 @@
 # Calculator
 A fully functional calculator in use.
 <br>
-HTML, Css and JavaSccript is used.
+HTML, CSS and JavaSccript is used.
 <br>
 Helps you to calculate your problems. It’s a versatile tool for math homework, financial management, and more.
 <br>
